@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="logo">Janmojaya Biswal</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h2>Hi, I'm Janmojaya.<br>I'm a <span id="typing-text" class="typing"></span><br> From Jagatsinghpur,Odisha.</h2>
+        </div>
+    </div>
+</div>
+
+<button id="backToTopBtn">Back To Top</button>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./RINTU.webp" alt="Janmojaya Biswal">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi! I'm <strong style="color: white;">Janmojaya Biswal</strong>, a passionate <strong style="color: white;">front-end developer</strong> with a knack for crafting beautiful and performant web experiences. I love working with <strong style="color: white;">HTML</strong>, <strong style="color: white;">CSS</strong> and <strong style="color: white;">JavaScript</strong> to turn ideas into reality. <br> Welcome to my portfolio !!!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education-grid">
+      <div class="education-card">
+        <img class="education-image" src="./Ravenshaw.png" alt="education 1" />
+        <div class="education-content">
+          <h3>Ravenshaw University</h3>
+          <p>Ravenshaw is the oldest institution of higher education in the state of Odisha and one of the oldest institutions of higher education in India. It was founded in 1868.</p>
+          <div class="education-links">
+            <a href="https://ravenshawuniversity.ac.in/" target="_blank" rel="noopener noreferrer">Visit</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="education-card">
+        <img class="education-image" src="./GEC.webp" alt="education 2" />
+        <div class="education-content">
+          <h3>GEC Autonomous College</h3>
+          <p>GEC Autonomous College a name to reckon in the field of technical and management education, was established in the year 2006, with the approval from AICTE, New Delhi and affiliation with BPUT, Odisha.</p>
+          <div class="education-links">
+            <a href="https://www.gec.edu.in/" target="_blank" rel="noopener noreferrer">Visit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section class="skills-section">
+  <h2>My Skills</h2>
+  <div class="skills-card">
+      <div class="skill" data-percent="90">
+        <span>HTML</span>
+        <div class="progress-bar"><div class="filler"><span class="percentage">90%</span></div></div>
+      </div>
+
+      <div class="skill" data-percent="80">
+        <span>CSS</span>
+        <div class="progress-bar"><div class="filler"><span class="percentage">80%</span></div></div>
+      </div>
+
+      <div class="skill" data-percent="70">
+        <span>JavaScript</span>
+        <div class="progress-bar"><div class="filler"><span class="percentage">70%</span></div></div>
+      </div>
+  </div>
+</section>
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./weather.png">
+                <div class="layer">
+                    <h3>Weather Web App</h3>
+                    <p>A simple weather web app to check the weather of different cities.</p>
+                    <a href="/Weather/weather.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./Calculator.png">
+                <div class="layer">
+                    <h3>Calculator Webpage</h3>
+                    <p>It is a simple calculator webpage that can do multiple arithmetical operations.</p>
+                    <a href="/Calculator/calculator.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./Gallery.png">
+                <div class="layer">
+                    <h3>Gallery Website</h3>
+                    <p>This is a simple gallery website that can perform multiple functions.</p>
+                    <a href="/Gallery/index.html"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> biswaljanmojaya@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +91 6371650337</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/16LprWTefB/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/mr_unknown_64?t=Q17g9zMDPzz7uHSYLimq3g&s=09"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/janmojaya_biswal/profilecard/?igsh=MWF0a2FlNXhidGVxNA=="><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/janmojaya-biswal-31976a332?"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="./Janmojaya-CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="copyright">
+        <p>Copyright &copy; 2023 Janmojaya</a></p>
+    </div>
+</div>
+
+<script>
+  const texts = ['Student.', 'Programmer.', 'Frontend Devloper.'];
+  let textIndex = 0;
+  let charIndex = 0;
+
+  const typing = document.getElementById('typing-text');
+  
+  function typeWord(){
+    if (charIndex < texts[textIndex].length) {
+      typing.textContent += texts[textIndex][charIndex];
+      charIndex++;
+      setTimeout(typeWord, 100);
+    } else {
+      setTimeout(deleteWord, 1000);
+    }
+  }
+
+  function deleteWord(){
+    if (charIndex > 0) {
+      typing.textContent = texts[textIndex].substring(0, charIndex - 1);
+      charIndex--;
+      setTimeout(deleteWord, 50);
+    } else {
+      textIndex = (textIndex + 1) % texts.length;
+      setTimeout(typeWord, 500);
+    }
+  }
+
+  typeWord();
+
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("backToTopBtn").addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll('.edu-card');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  cards.forEach(card => observer.observe(card));
+});
+
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const skillsSection = document.querySelector(".skills-section");
+
+  skillsSection.addEventListener("mouseenter", () => {
+    document.querySelectorAll(".skill").forEach((skill) => {
+      const percent = skill.dataset.percent;
+      const filler = skill.querySelector(".filler");
+
+      filler.style.width = percent + "%";
+    });
+  });
+
+  skillsSection.addEventListener("mouseleave", () => {
+    document.querySelectorAll(".skill").forEach((skill) => {
+      const filler = skill.querySelector(".filler");
+
+      filler.style.width = "0%";
+    });
+  });
+});
+</script>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxiJBD9yRjGSauyA7iER_S8lU9C_zv_ab_6x8EAfc5RZSdJEYbMlfF3Xcd3FKE4xOIlsg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+</body>
+</html>
